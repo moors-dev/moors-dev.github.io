@@ -2,8 +2,10 @@
     --bg: #efefef;
     --main: #B5CEA8;
     --sub: #D9D9D9;
-    --ter: #6f1a07;
     --text: #333333;
+    --one: #D7BA7D;
+	--two: #B3E5FE;
+	--three: #CE9178;
 }
 
 .cards-list {
@@ -16,11 +18,10 @@
 }
 
 .card {
-    margin: 20px 20px;
+    margin: 0px 20px 40px 20px;
     width: 587px;
     height: 250px;
-    border-radius: 40px;
-	box-shadow: inset 0 -1.25px 1.25px 0 rgb(0,0,0,0.13), inset 0 1.25px 1.25px 0 rgb(255,255,255,1), inset 5.75px -8.25px 7px 0 rgb(255,255,255,0.9), inset -6.25px 7px 5.75px 0 rgb(0,0,0,0.1), 0 -3.75px 4.5px 0 rgb(255,255,255,1), 0 6.25px 10.25px 0 rgb(0,0,0,0.16);
+    border-radius: 14px;
     cursor: pointer;
     transition: 0.4s;
     will-change: transform;
@@ -30,13 +31,11 @@
 .card .card_image {
     width: inherit;
     height: inherit;
-    border-radius: 40px;
 }
 
 .card .card_image img {
     width: inherit;
     height: inherit;
-    border-radius: 40px;
     object-fit: contain;
 }
 
@@ -56,4 +55,60 @@
 
 .title {
     color: var(--text);
+}
+
+.mid-page {
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin: 128px auto;
+}
+
+.code-animation {
+    width: 650px;
+    height: 825px;
+    margin-bottom: 40px;
+    position: absolute;
+}
+
+.code-animation .lines path {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+}
+  
+.code-animation.animating .lines path {
+    animation: coding 550ms ease-out forwards;
+}
+
+@keyframes coding {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+.select-all {
+    display: none;
+}
+
+.animation-bg {
+    width: 650px;
+    height: 825px;
+    margin-bottom: 40px;
+    position: absolute;
+    border-radius: 14px;
+}
+
+.mid-animation {
+    display: flex;
+    width: 650px;
+    height: 825px;
+    margin-right: 40px;
+}
+
+.mid-side {
+    display: flex;
+    width: 524px;
+    height: 825px;
+    background: var(--sub);
+    border-radius: 14px;
 }

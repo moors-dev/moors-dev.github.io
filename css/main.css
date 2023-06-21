@@ -1,9 +1,12 @@
 :root {
     --bg: #efefef;
-    --main: #D9D9D9;
-    --sub: #567568;
-    --ter: #6f1a07;
+    --main: #B5CEA8;
+    --sub: #D9D9D9;
     --alt: #2b2118;
+	--text: #333333;
+	--one: #D7BA7D;
+	--two: #B3E5FE;
+	--three: #CE9178;
     --body-bg: #efefef;
     --shadow-color: #e7e7e7;
     --btn-bg-start: #f4f4f4;
