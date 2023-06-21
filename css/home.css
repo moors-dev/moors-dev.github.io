@@ -10,7 +10,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 40px auto auto;
     flex-wrap: wrap;
 }
