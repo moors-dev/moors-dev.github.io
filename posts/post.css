@@ -27,6 +27,7 @@
     max-width: 700px;
     border-radius: 14px;
     background: var(--sub);
+    margin: 40px;
 }
   
 .container__snippet p {
