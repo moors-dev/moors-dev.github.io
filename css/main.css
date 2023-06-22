@@ -52,14 +52,14 @@ body {
 
 .header-contents nav {
 	line-height: 35px;
-    padding: 0 0 0 35%;
+    padding: 0 0 0 45%;
 	display: flex;
 }
 
 .header-contents nav a{
     display: flex;
     justify-content: center;
-    padding: 10px 10px;
+    padding: 6px 6px;
 	text-decoration:none;
 	border-radius: 14px;
 	margin: 0px 15px;
@@ -74,7 +74,10 @@ body {
 /* Header toggles */
 
 .header-toggle1 {
-	display: contents;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 180px;
 }
 
 .light-side {

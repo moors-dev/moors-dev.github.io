@@ -1,0 +1,75 @@
+:root {
+    --bg: #efefef;
+    --main: #B5CEA8;
+    --sub: #D9D9D9;
+    --alt: #2b2118;
+    --text: #333333;
+    --one: #D7BA7D;
+    --two: #B3E5FE;
+    --three: #CE9178;
+    --body-bg: #efefef;
+    --color-comments: #0367D6;
+    --color-numbers: #F75D85;
+    --color-operators: #2BC506;
+    --color-functions: #FBDD00;
+    --color-keywords: #FA9800;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Fira+Mono");
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.container__snippet {
+    max-width: 700px;
+    border-radius: 14px;
+    background: var(--sub);
+}
+  
+.container__snippet p {
+    display: inline-block;
+    border-radius: 14px;
+}
+
+.snippet-header {
+    padding: 0 0 0 14px;
+    font-family: sans-serif;
+}
+
+pre {
+    padding: 0 10px 0 0;
+    background: var(--color-background-dark);
+    border-left: 5px solid var(--color-border);
+    border-radius: 14px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+pre code {
+    font-size: 14px;
+    font-weight: 300
+}
+
+span.comments {
+    color: var(--color-comments);
+    font-style: italic;
+}
+
+span.numbers {
+    color: var(--color-numbers);
+}
+
+span.operators {
+    color: var(--color-operators);
+}
+
+span.keywords {
+    color: var(--color-keywords);
+}
+
+span.functions {
+    color: var(--color-functions);
+}
