@@ -159,7 +159,50 @@ body {
 100% {transform: translateX(0);}
 }
 
+.header-logo1 {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 150% 0;
+    height: 70px;
+}
 
+.header-logo2 img {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 150% 0;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+.header-logo1:hover {
+    background-position-x: 0%;
+}
+
+.slider {
+    background: url("asset/header-logo2.svg") right no-repeat;
+    overflow: hidden;
+    width: 73px;
+    float: left;
+    height: 70px;
+    -webkit-transition: width 1s ease; 
+    -moz-transition: width 1s ease; 
+    -ms-transition: width 1s ease; 
+    -o-transition: width 1s ease; 
+    transition: width 1s ease;
+}
+
+.slider:hover {
+    width: 236px;
+    height: 70px;
+    -webkit-transition: width 1s ease; 
+    -moz-transition: width 1s ease; 
+    -ms-transition: width 1s ease; 
+    -o-transition: width 1s ease; 
+    transition: width 1s ease;
+}
 
 
 
