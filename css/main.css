@@ -174,7 +174,7 @@ body {
     background-position: 150% 0;
     height: 40px;
     margin-top: 15px;
-    background-color: #ffffff;
+    background-color: var(--bg);
 }
 
 .header-logo1:hover {
@@ -182,7 +182,7 @@ body {
 }
 
 .slider {
-    background: url("asset/header-logo2.svg") right no-repeat;
+    background: url("/asset/header-logo2.svg") right no-repeat;
     overflow: hidden;
     width: 73px;
     float: left;
