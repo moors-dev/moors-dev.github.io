@@ -48,6 +48,7 @@ body {
 .logo {
     height: 40px;
     margin: 14px 0px 14px 0px;
+	position: absolute;
 }
 
 .header-contents nav {
@@ -116,7 +117,7 @@ body {
 	transition: all ease 0.3s;
 	right: 4.5px;
 	animation: bounce-right 0.7s ease-out;
-}
+	}
 
 .switch-light {
 	background: var(--on-light);
@@ -160,6 +161,7 @@ body {
 }
 
 .header-logo1 {
+    position: absolute;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 150% 0;
@@ -167,6 +169,7 @@ body {
 }
 
 .header-logo2 img {
+    position: absolute;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 150% 0;
