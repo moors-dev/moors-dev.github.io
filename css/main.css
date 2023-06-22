@@ -48,6 +48,7 @@ body {
 .logo {
     height: 40px;
     margin: 14px 0px 14px 0px;
+	padding-right: 1225px;
 	position: absolute;
 }
 
@@ -174,7 +175,6 @@ body {
     background-attachment: fixed;
     background-position: 150% 0;
     height: 40px;
-    margin-top: 15px;
     background-color: var(--bg);
 }
 
@@ -187,7 +187,7 @@ body {
     overflow: hidden;
     width: 73px;
     float: left;
-    height: 70px;
+    height: 40px;
     -webkit-transition: width 1s ease; 
     -moz-transition: width 1s ease; 
     -ms-transition: width 1s ease; 
@@ -197,7 +197,7 @@ body {
 
 .slider:hover {
     width: 236px;
-    height: 70px;
+    height: 40px;
     -webkit-transition: width 1s ease; 
     -moz-transition: width 1s ease; 
     -ms-transition: width 1s ease; 
