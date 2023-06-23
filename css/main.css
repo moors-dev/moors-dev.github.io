@@ -205,15 +205,51 @@ body {
     transition: width 1s ease;
 }
 
+.footer {
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+	width: 100%;
+	height: 400px;
+	background: var(--main);
+}
 
+.logo-footer {
+	margin: auto 0;
+	display: block;
+}
 
+.logo-footer img {
+	width: 200px;
+}
 
+.socials {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
 
+.circle-social {
+	margin: 5px;
+	background: var(--three);
+	border-radius: 14px;
+	padding: 5px;
+}
 
+.circle-social img {
+	width: 50px;
+}
 
+.circle-top {
+	margin: 5px;
+	background: var(--three);
+	border-radius: 14px;
+	padding: 5px;
+}
 
-
-
+.circle-top img {
+	width: 50px;
+}
 
 
 
