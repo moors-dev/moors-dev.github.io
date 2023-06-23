@@ -166,6 +166,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 150% 0;
+    height: 70px;
 }
 
 .header-logo2 img {

@@ -155,18 +155,111 @@
     font-family: sans-serif;
     font-weight: bold;
     font-size: 30px;
-    width: 250px;
-    margin: -125px -50px;
+    width: 200px;
+    height: 153px;
+    margin: -150px 25px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
 }
 
 .post_title p {
     color: var(--text);
+    text-align: left;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.lower-page {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.lower-wide {
+    display: flex;
+    width: 1214px;
+    height: 540px;
+    background: var(--sub);
+    border-radius: 14px;
+    margin: auto;
+}
+
+.lower-cards-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 40px auto auto;
+    flex-wrap: wrap;
+}
+
+.lower-card1 {
+    margin: 0px 20px 40px 20px;
+    width: 587px;
+    height: 250px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.4s;
+    will-change: transform;
+    background: var(--one);
+}
+
+.lower-card2 {
+    margin: 0px 20px 40px 20px;
+    width: 587px;
+    height: 250px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.4s;
+    will-change: transform;
+    background: var(--two);
+}
+
+.lower-card3 {
+    margin: 0px 20px 40px 20px;
+    width: 587px;
+    height: 250px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.4s;
+    will-change: transform;
+    background: var(--three);
+}
+
+.lower-card4 {
+    margin: 0px 20px 40px 20px;
+    width: 587px;
+    height: 250px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.4s;
+    will-change: transform;
+    background: var(--main);
+}
+
+.lower-card1, .lower-card2, .lower-card3, .lower-card4, .lower-card_image {
+    width: 587px;
+    height: 250px;
+}
+
+.lower-card1, .lower-card2, .lower-card3, .lower-card4, .lower-card_image img {
+    width: 587px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.card_title {
     text-align: center;
     border-radius: 0px 0px 40px 40px;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 30px;
+    margin-top: -170px;
+    height: 40px;
+}
+
+.lower-card1:hover, .lower-card2:hover, .lower-card3:hover, .lower-card4:hover {
+    transform: scale(0.98, 0.98);
 }

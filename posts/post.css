@@ -32,19 +32,18 @@
   
 .container__snippet p {
     display: inline-block;
-    border-radius: 14px;
 }
 
 .snippet-header {
-    padding: 0 0 0 14px;
+    padding: 20px 0 0 14px;
     font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0 0 -20px;
 }
 
 pre {
-    padding: 0 10px 0 0;
-    background: var(--color-background-dark);
-    border-left: 5px solid var(--color-border);
-    border-radius: 14px;
+    padding: 0 10px;
     width: 100%;
     overflow-x: auto;
 }
@@ -73,4 +72,22 @@ span.keywords {
 
 span.functions {
     color: var(--color-functions);
+}
+
+.paragraph {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.paragraph h2 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: var(--text);
+}
+
+.paragraph p {
+    font-family: sans-serif;
+    color: var(--text);
 }
