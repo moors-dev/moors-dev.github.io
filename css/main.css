@@ -231,7 +231,7 @@ body {
 
 .circle-social {
 	margin: 5px;
-	background: var(--three);
+	background: var(--sub);
 	border-radius: 14px;
 	padding: 5px;
 }
@@ -242,91 +242,11 @@ body {
 
 .circle-top {
 	margin: 5px;
-	background: var(--three);
+	background: var(--sub);
 	border-radius: 14px;
 	padding: 5px;
 }
 
 .circle-top img {
 	width: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-button {
-	background-color: transparent;
-	border: none;
-	border-radius: 10%;
-	cursor: pointer;
-	display: inline-block;
-	font-family: monospace;
-	font-size: 2rem;
-	font-weight: 400;
-	line-height: 1;
-	padding: 1rem 2rem;
-	text-align: center;
-	
-	&:hover {
-		background-color: transparent;
-	}
-
-	& ~ button {
-		margin-left: 1rem;
-	}
-}
-
-.btn-emboss {
-	background-image: linear-gradient(0deg, var(--btn-bg-start) 0%, var(--btn-bg-end) 100%);
-	box-shadow:
-		0 0 0.133rem rgba(0, 0, 0, 0.15),
-		0.66rem 0.66rem 1rem var(--shadow-color),
-		-0.66rem 0.66rem 1rem var(--shadow-color),
-		-1rem -1rem 1rem rgba(255, 255, 255, 0.4),
-		1rem -1rem 1rem rgba(255, 255, 255, 0.4),
-		inset 0 0 0 0.0625rem rgba(255, 255, 255, 0.4);
-	color: #dadada;
-	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.05);
-	transition:
-		box-shadow 100ms ease-in-out,
-		background-image 100ms ease-in-out,
-		color 0s 100ms linear,
-		text-shadow 0s 100ms linear;
-	
-	> span {
-		color: transparent;
-		background-clip: text;
-		background-image: linear-gradient(0deg, #dadada 0%, #aaaaaa 100%);
-	}
-	
-	&.active {
-		background-image: linear-gradient(0deg, var(--btn-bg-active-start) 0%, var(--btn-bg-active-end) 100%);
-		box-shadow:
-			0 0 0.2rem rgba(0, 0, 0, 0.2),
-			0.66rem 0.66rem 1rem rgba(255, 255, 255, 0.4),
-			-0.66rem 0.66rem 1rem rgba(255, 255, 255, 0.4),
-			-0.66rem -0.66rem 1rem var(--shadow-color),
-			0.66rem -0.66rem 1rem var(--shadow-color);
-		color: deepskyblue;
-		text-shadow:
-			0 0 1rem lightskyblue,
-			0 -1px 1px rgba(0, 0, 0, 0.05),
-			0 1px 1px rgba(255, 255, 255, 0.4);
-		
-		> span {
-			background-image: linear-gradient(45deg, lightskyblue 0%, deepskyblue 100%);
-		}
-	}
 }
