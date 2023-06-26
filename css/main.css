@@ -221,6 +221,7 @@ body {
 
 .logo-footer img {
 	width: 200px;
+	border-radius: 100px;
 }
 
 .socials {
