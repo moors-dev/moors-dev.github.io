@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'tt2020';
+	src: url(/fonts/TT2020.ttf) format('truetype');
+}
+
 :root {
     --bg: #efefef;
     --main: #B5CEA8;
@@ -26,7 +31,7 @@
 .container__snippet {
     max-width: 700px;
     border-radius: 14px;
-    background: var(--sub);
+    background: var(--bg);
     margin: 40px;
 }
   
@@ -40,6 +45,10 @@
     font-weight: bolder;
     font-size: 18px;
     margin: 0 0 -20px;
+}
+
+code {
+    font-family: tt2020;
 }
 
 pre {
@@ -79,6 +88,9 @@ span.functions {
     display: flex;
     margin: auto;
     flex-direction: column;
+    background: var(--bg);
+    border-radius: 14px;
+    padding: 0 20px;
 }
 
 .paragraph h2 {
@@ -88,6 +100,6 @@ span.functions {
 }
 
 .paragraph p {
-    font-family: sans-serif;
+    font-family: tt2020;
     color: var(--text);
 }

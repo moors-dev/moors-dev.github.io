@@ -15,6 +15,11 @@
 	--off-red-light: radial-gradient(circle at 60% 30%, #FF7676, #ED5C5C);
 }
 
+@font-face {
+	font-family: 'tt2020';
+	src: url(/fonts/TT2020.ttf) format('truetype');
+}
+
 body {
     display: block;
     margin: 0px;
