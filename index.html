@@ -3,12 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, intial-scale=1">
-        <title>CRE3D - Development</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="asset/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+        <title>Moors - Development</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="css/home.css"/>
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap');</style>
         <script>
           $(function(){
             $('#header').load('header.html');
@@ -19,10 +18,30 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-        <div class="container">
-          <div id="header"></div>
-          <div id="home"></div>
-          <div id="footer"></div>
-        </div>
+        <div id="header"></div>
+        <div id="home"></div>
+        <div id="footer"></div>
     </body>
 </html>
+
+<script>
+  function toggleSwitchRedLight(toggle) {
+    var switchElement = toggle.querySelector('.switch');
+    switchElement.classList.toggle('off-red-light');
+  }
+
+  function toggleSwitchLight(toggle) {
+    var switchElement = toggle.querySelector('.switch');
+    switchElement.classList.toggle('off-light');
+  }
+
+  function toggleSwitchRedDark(toggle) {
+    var switchElement = toggle.querySelector('.switch');
+    switchElement.classList.toggle('off-red-dark');
+  }
+
+  function toggleSwitchDark(toggle) {
+    var switchElement = toggle.querySelector('.switch');
+    switchElement.classList.toggle('off-dark');
+  }
+  </script>
