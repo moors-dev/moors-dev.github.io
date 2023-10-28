@@ -10,7 +10,7 @@ body {
 
 .bg {
     overflow-x: hidden;
-    background: url(assets/bg.svg);
+    background: url(/assets/bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
