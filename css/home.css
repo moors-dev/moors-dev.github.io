@@ -1,0 +1,18 @@
+:root {
+    --light: #AEAEAE;
+    --mid: #404040;
+    --dark: #0E0E0E;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    overflow-x: hidden;
+    background: url(assets/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--dark);
+}
