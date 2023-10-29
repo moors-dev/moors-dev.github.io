@@ -1,10 +1,12 @@
 <link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/text-ascii.css">
 <div class="bg-sizing">
     <div class="bg"></div>
 </div>
 
 <div class="ascii-maker">
-    <input type="file" id="imageInput" class="choose-file" accept="image/*" onchange="handleImage(this)">
+    <label for="imageInput" class="choose-file">Choose an image</label>
+    <input type="file" id="imageInput" accept="image/*" onchange="handleImage(this)">
     <pre id="asciiContainer"></pre>
     <a id="downloadASCIILink" style="display: none" download="ascii_art.txt">Download ASCII Art</a>
     <a id="downloadImageLink" style="display: none">Download ASCII Image</a>
@@ -12,7 +14,7 @@
     <label for="sizeSelect">Select Size:</label>
     <select id="sizeSelect" onchange="handleImage(this)">
         <option value="small">Small</option>
-        <option value="big">Big</option>
+        <option value="big">Original size</option>
     </select>
 
     <button id="downloadImageButton" style="display: none">Download ASCII Image</button>
@@ -40,7 +42,7 @@
                     height = width * aspectRatio / 2;
                 } else {
                     width = img.width;
-                    height = img.height;
+                    height = img.height / 2;
                 }
 
                 canvas.width = width;
