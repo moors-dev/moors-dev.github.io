@@ -16,5 +16,20 @@
     background-size: cover;
     background-position: center;
     background-color: var(--dark);
-    height: 1440px;
+    height: 100vh;
+}
+
+.logos {
+    display: flex;
+    margin: auto;
+}
+
+.logo-black {
+    width: fit-content;
+    position: absolute;
+}
+
+.logo-light {
+    width: fit-content;
+    position: absolute;
 }
