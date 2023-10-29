@@ -21,7 +21,9 @@
 
 .logos {
     display: flex;
-    margin: auto;
+    position: absolute;
+    width: 100vw;
+    justify-content: center;
 }
 
 .logo-black {
