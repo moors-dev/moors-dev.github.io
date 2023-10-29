@@ -1,4 +1,9 @@
-<input type="file" id="imageInput" accept="image/*" onchange="handleImage(this)">
+<link rel="stylesheet" href="css/home.css">
+<div class="bg-sizing">
+    <div class="bg"></div>
+</div>
+
+<input type="file" id="imageInput" class="choose-file" accept="image/*" onchange="handleImage(this)">
 <pre id="asciiContainer"></pre>
 <a id="downloadASCIILink" style="display: none" download="ascii_art.txt">Download ASCII Art</a>
 <a id="downloadImageLink" style="display: none">Download ASCII Image</a>
@@ -31,7 +36,7 @@
             if (selectedSize === "small") {
                 width = 100;
                 const aspectRatio = img.height / img.width;
-                height = width * aspectRatio;
+                height = width * aspectRatio / 2;
             } else {
                 width = img.width;
                 height = img.height;
