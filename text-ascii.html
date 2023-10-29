@@ -1,0 +1,88 @@
+<input type="file" id="imageInput" accept="image/*" onchange="handleImage(this)">
+<pre id="asciiContainer"></pre>
+<a id="downloadASCIILink" style="display: none" download="ascii_art.txt">Download ASCII Art</a>
+<a id="downloadImageLink" style="display: none">Download ASCII Image</a>
+
+<label for="sizeSelect">Select Size:</label>
+<select id="sizeSelect" onchange="handleImage(this)">
+    <option value="small">Small</option>
+    <option value="big">Big</option>
+</select>
+
+<button id="downloadImageButton" style="display: none">Download ASCII Image</button>
+
+<script>
+    const ASCII_CHARS = "@%#*+=-:. ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    function handleImage(input) {
+        const imageContainer = document.getElementById("asciiContainer");
+        const downloadASCIILink = document.getElementById("downloadASCIILink");
+        const downloadImageLink = document.getElementById("downloadImageLink");
+        const downloadImageButton = document.getElementById("downloadImageButton");
+        const sizeSelect = document.getElementById("sizeSelect");
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+
+        img.onload = function () {
+            const selectedSize = sizeSelect.value;
+            let width, height;
+
+            if (selectedSize === "small") {
+                width = 100;
+                const aspectRatio = img.height / img.width;
+                height = width * aspectRatio;
+            } else {
+                width = img.width;
+                height = img.height;
+            }
+
+            canvas.width = width;
+            canvas.height = height;
+            ctx.drawImage(img, 0, 0, width, height);
+            const imageData = ctx.getImageData(0, 0, width, height).data;
+            const asciiArt = createASCIIArt(imageData, width, height);
+            imageContainer.textContent = asciiArt;
+            downloadASCIILink.href = "data:text/plain;charset=utf-8," + encodeURIComponent(asciiArt);
+            downloadASCIILink.style.display = "block";
+
+            createASCIIImage(asciiArt, width, height, downloadImageLink, downloadImageButton);
+        };
+
+        img.src = URL.createObjectURL(input.files[0]);
+    }
+
+    function createASCIIArt(imageData, width, height) {
+        let asciiArt = '';
+        for (let i = 0; i < imageData.length; i += 4) {
+            const r = imageData[i];
+            const g = imageData[i + 1];
+            const b = imageData[i + 2];
+            const gray = 0.299 * r + 0.587 * g + 0.114 * b;
+            const index = Math.floor((gray / 255) * (ASCII_CHARS.length - 1));
+            asciiArt += ASCII_CHARS[index];
+            if ((i / 4 + 1) % width === 0) {
+                asciiArt += '\n';
+            }
+        }
+        return asciiArt;
+    }
+
+    function createASCIIImage(asciiArt, width, height, downloadLink, downloadImageButton) {
+        const div = document.createElement("div");
+        div.innerHTML = `<pre style="font-size: 6px; white-space: pre;">${asciiArt}</pre>`;
+
+
+        html2canvas(div, { scale: 4 }).then(canvas => {
+            downloadLink.href = canvas.toDataURL("image/png");
+            downloadLink.style.display = "block";
+            downloadImageButton.style.display = "block";
+        });
+    }
+
+
+    function downloadImage() {
+        const link = document.getElementById("downloadImageLink");
+        link.style.display = "block";
+    }
+</script>
