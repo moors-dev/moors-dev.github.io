@@ -5,6 +5,10 @@
     --black: #000000;
 }
 
+body {
+    margin: 0;
+}
+
 .choose-file {
     background-color: var(--black);
     border-radius: 16px;
@@ -19,4 +23,8 @@
     background-color: var(--dark);
     box-shadow: inset 0 0 0 2px #FEFFE1;
     transform: scale(0.98);
+}
+
+.ascii-maker {
+    position: absolute;
 }
