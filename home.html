@@ -36,6 +36,7 @@ function bodyAppend(element) { document.body.appendChild(element); }
 var div1 = makeDiv();
 bodyAppend(div1);
 div1.style.fontFamily = "monospace";
+div1.classList.add('left')
 var animArray1 = [
 	"[>    ]",
 	"[>>   ]",
@@ -52,6 +53,7 @@ var anim1 = new ASCIIAnimation(animArray1, 50, div1);
 var div2 = makeDiv();
 bodyAppend(div2);
 div2.style.fontFamily = "monospace";
+div2.classList.add('right')
 var animArray1 = [
 	"[    <]",
 	"[   <<]",
