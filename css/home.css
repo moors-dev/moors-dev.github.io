@@ -4,8 +4,8 @@
     --dark: #0E0E0E;
 }
 
-body {
-    margin: 0;
+.bg-sizing {
+    height: 2048px;
 }
 
 .bg {
