@@ -6,6 +6,7 @@
 
 .bg-sizing {
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .bg {
@@ -15,5 +16,5 @@
     background-size: cover;
     background-position: center;
     background-color: var(--dark);
-    height: 2048px;
+    height: 1440px;
 }
