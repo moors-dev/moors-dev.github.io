@@ -19,6 +19,7 @@ input[type="file"] {
     font-family: monospace;
     font-size: 16px;
     text-decoration: none;
+    color: #FEFFE1;
     padding: 8px;
     transition: 150ms;
 }
@@ -30,5 +31,10 @@ input[type="file"] {
 }
 
 .ascii-maker {
-    position: absolute;
+    margin: calc(-100vh + 200px) auto 0;
+    background: var(--black);
+    color: white;
+    width: fit-content;
+    max-width: 80%;
+    overflow-x: auto;
 }
