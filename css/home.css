@@ -5,6 +5,10 @@
     --black: #000000;
 }
 
+html {
+    overflow: hidden;
+}
+
 .bg-sizing {
     height: 100vh;
     overflow-y: hidden;
