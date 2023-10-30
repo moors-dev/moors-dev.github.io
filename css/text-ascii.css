@@ -38,16 +38,51 @@ label {
     margin: calc(-100vh + 200px) auto 0;
     color: white;
     width: fit-content;
-    max-width: 80%;
-    overflow-x: auto;
-    padding: 10px;
+    max-width: 718px;
+    overflow: hidden;
+    padding: 50px 40px 40px 40px;
 }
 
 .select-size {
-    
+    background-color: var(--black);
+    border-radius: 16px;
+    font-family: monospace;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FEFFE1;
+    padding: 8px;
 }
 
 #asciiContainer {
     max-height: 800px;
     background-color: var(--black);
+    overflow: auto;
+}
+
+.size-download {
+    margin: 0 0 0 438px;
+}
+
+#downloadASCIILink {
+    margin: -62px 0 0 -170px;
+    background-color: var(--black);
+    border-radius: 16px;
+    font-family: monospace;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FEFFE1;
+    padding: 8px;
+    transition: 150ms;
+    max-width: fit-content;
+}
+
+select#sizeSelect {
+    background-color: var(--black);
+    border-radius: 16px;
+    font-family: monospace;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FEFFE1;
+    padding: 8px;
+    border: none;
 }
