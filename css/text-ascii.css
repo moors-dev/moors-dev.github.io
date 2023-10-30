@@ -13,6 +13,10 @@ input[type="file"] {
     display: none;
 }
 
+label {
+
+}
+
 .choose-file {
     background-color: var(--black);
     border-radius: 16px;
@@ -32,9 +36,18 @@ input[type="file"] {
 
 .ascii-maker {
     margin: calc(-100vh + 200px) auto 0;
-    background: var(--black);
     color: white;
     width: fit-content;
     max-width: 80%;
     overflow-x: auto;
+    padding: 10px;
+}
+
+.select-size {
+    
+}
+
+#asciiContainer {
+    max-height: 800px;
+    background-color: var(--black);
 }
